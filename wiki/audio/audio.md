@@ -19,15 +19,15 @@ libGDX will automatically pause and resume all audio playback for you if your ap
 libGDX Android backend uses the `SoundPool` API to play `Sound`s and the `MediaPlayer` for `Music`. These API have some limitations and known issues in certain scenarios:
 - Latency is not great and the default implementation is not recommended for latency sensitive apps like rhythm games.
 - Playing several sounds at the same time may cause performance issues on some devices. An easy way to fix it (with the limitation some methods are unsupported) is using the alternative Android implementation `AsynchronousAndroidAudio` by implementing `createAudio()`on `AndroidLauncher` like this:
+  ```java
+  @Override
+  public AndroidAudio createAudio(Context context, AndroidApplicationConfiguration config) {
+	  return new AsynchronousAndroidAudio(context, config);
+  }
+  ```
+- Ogg Vorbis files containing the `ANDROID_LOOP` metadata tag set to `true` will always loop, no matter what.
 
-```java
-@Override
-public AndroidAudio createAudio(Context context, AndroidApplicationConfiguration config) {
-	return new AsynchronousAndroidAudio(context, config);
-}
-```
-
-Generally speaking, Audio on Android is problematic and there may be other scenarios or device especific issues.
+Generally speaking, Audio on Android is problematic and there may be other scenarios or device-specific issues.
 
 ## Alternatives
 
@@ -36,4 +36,3 @@ In an attempt to fix some of these issues Google created [Oboe](https://github.c
 Another alternative is [MiniAudio](https://miniaud.io/) through [gdx-miniaudio](https://github.com/rednblackgames/gdx-miniaudio) project which is an actively mantained cross-platform audio engine already used in production by some libGDX games.
 
 The libGDX setup tool gdx-liftoff has options to load libGDX-Oboe and gdx-miniaudio.  You'll find these under the Third-Party Section of gdx-liftoff.
-

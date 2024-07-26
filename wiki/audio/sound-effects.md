@@ -5,16 +5,32 @@ Sound effects are small audio samples, usually no longer than a few seconds, tha
 
 Sound effects can be stored in various formats, including MP3, OGG and WAV. Which format you should use, depends on your specific needs, as each format has its own advantages and disadvantages. For example, WAV files are quite large compared to other formats, OGG files don’t work on RoboVM (iOS) nor with Safari (GWT), and MP3 files have issues with seemless looping.
 
-**Note:** On Android, a Sound instance can not be over 1mb in size (uncompressed raw PCM size, not the file size). If you have a bigger file, use [Music](/wiki/audio/streaming-music) instead.
-{: .notice--primary}
+## Android limitations
+
+On Android, `Sound` instances are limited to 1 MiB in size, as raw PCM (not the file size).
+
+The table below shows the number of seconds (rounded down to 3 decimal places) achievable with different sample rates and channels. Sounds always use a bit depth of 16.
+
+| Sample rate | Stereo | Mono   |
+|-------------|--------|--------|
+| 48 kHz      | 5.461  | 10.922 |
+| 44.1 kHz    | 5.944  | 11.888 |
+| 32 kHz      | 8.192  | 16.384 |
+| 24 kHz      | 10.922 | 21.845 |
+
+The difference in fidelity between 32kHz and above is inaudible to most people, assuming it isn't stored as MP3 (which discards high frequencies). It is [not recommended](https://developer.android.com/ndk/guides/audio/sampling-audio#use-simple-resampling-ratios-fixed-versus-interpolated-polyphases) to use completely arbitrary sample rates.
+
+For longer sounds, [`Music`](/wiki/audio/streaming-music) can be used instead. Even on other backends, loading extremely long sounds is best avoided for compatibility, resources, and load times reasons.
+
+## Loading sounds
 
 Sound effects are represented by the [Sound](https://javadoc.io/doc/com.badlogicgames.gdx/gdx/latest/com/badlogic/gdx/audio/Sound.html) interface. Loading a sound effect works as follows:
 
 ```java
-Sound sound = Gdx.audio.newSound(Gdx.files.internal("data/mysound.mp3"));
+Sound sound = Gdx.audio.newSound(Gdx.files.internal("mysound.mp3"));
 ```
 
-This loads an audio file called `"mysound.mp3"` from the internal directory `data`.
+This loads an audio file called `"mysound.mp3"` from the assets directory.
 
 Once we have the sound loaded we can play it back:
 
@@ -49,7 +65,27 @@ sound.dispose();
 
 Accessing the sound after you disposed of it will result in undefined errors.
 
-### Multiple sounds cause freezes on Android
-As stated on an [Audio](/wiki/audio/audio) topic the Android has many issues with audio in general. One of them, is that waiting for sound ID might take quite a lot time. The sounds in Libgdx are playing synchronously by default. It causes main loop to be frozen for significant time if you play a lot of sounds at once. Especially this issue noticeable on Android 10.
+## Simultaneous sounds
 
-The solution is to make them playing asynchronously. However it will cause inability to use sounds methods where ID is required. More info provided here - [Audio#audio-on-android](/wiki/audio/audio#audio-on-android)
+By default, libGDX is restricted to playing 16 sounds simultaneously. This limit can be raised or lowered as desired via each module's `ApplicationConfiguration` object.
+
+### Android
+
+Set `maxSimultaneousSounds`. Bear in mind that the operating system only allows a maximum of 32 active audio instances at once, system-wide! In addition to your `Sound`s, this includes `Music`, other apps in the foreground, media players, and system sounds such as notifications. Think twice before raising it.
+
+### Desktop
+
+Use `setAudioConfig(simultaneousSources, 512, 9)`, where `simultaneousSources` is your desired maximum number of simultaneous audio sources. The other two parameters are the default values for `AudioDevice` buffer size and count. 
+
+For applications still using the legacy LWJGL2 backend, set `audioDeviceSimultaneousSources`.
+
+Increasing this value does not have ramifications in the same way that Android does.
+
+### Other platforms
+
+iOS and GWT can play a theoretically unlimited number of sounds at once without any configuration required.
+
+## Multiple sounds cause freezes on Android
+As stated on an [Audio](/wiki/audio/audio) topic the Android has many issues with audio in general. One of them, is that waiting for sound ID might take quite a lot of time. The sounds in libGDX play synchronously by default. It causes main loop to be frozen for significant time if you play a lot of sounds at once. This issue is especially noticeable on Android 10.
+
+The solution is to make them play asynchronously. However, it will cause an inability to use `Sound`'s methods where ID is required. More info provided here - [Audio#audio-on-android](/wiki/audio/audio#audio-on-android)

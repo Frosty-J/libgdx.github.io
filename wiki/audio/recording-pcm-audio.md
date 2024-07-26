@@ -1,6 +1,9 @@
 ---
 title: Recording PCM audio
 ---
+**Note:** This page needs updating. It doesn't cover how to request microphone permission on Android.
+{: .notice--primary}
+
 You can access PCM data from the microphone on a PC or Android phone via the [AudioRecorder](https://javadoc.io/doc/com.badlogicgames.gdx/gdx/latest/com/badlogic/gdx/audio/AudioRecorder.html) [(code)](https://github.com/libgdx/libgdx/blob/master/gdx/src/com/badlogic/gdx/audio/AudioRecorder.java) interface. To create an instance of that interface use:
 
 ```java
