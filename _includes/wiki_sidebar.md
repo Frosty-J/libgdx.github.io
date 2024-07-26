@@ -29,6 +29,7 @@
 * [Recording PCM audio](/wiki/audio/recording-pcm-audio)
 * [Sound effects](/wiki/audio/sound-effects)
 * [Streaming music](/wiki/audio/streaming-music)
+* [Audio codecs](/wiki/audio/audio-codecs)
 </div>
 </details>
 
