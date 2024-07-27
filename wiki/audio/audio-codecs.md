@@ -11,16 +11,16 @@ For simplicity's sake, this page refers to them by their common name, whether th
 
 | Platform | MP3 | Vorbis | WAV | Opus | HE-AAC | FLAC |
 |----------|-----|--------|-----|------|--------|------|
-| Desktop  | ✔️  | Y      | Y   | ❌    | ❌      | **   |
+| Desktop  | ✔️  | Y      | Y   | ❌    | ❌      | ⚠️** |
 | Android  | Y   | Y      | Y   | Y    | Y      | Y    |
-| iOS      | Y   | N      | ?   | ?    | Y      | ?    |
+| iOS      | Y   | ⚠️***  | ?   | ?    | Y      | ?    |
 | Web*     | Y   | Y      | Y   | Y    | Y      | Y    |
-
-⚠️
 
 &ast; "Web" refers to the likes of Google Chrome and Mozilla Firefox. For Safari on iOS, refer to the iOS column.
 
 &ast;&ast; Supported via third-party [TuningFork](https://github.com/Hangman/TuningFork) library.
+
+&ast;&ast;&ast; Supported via third-party [gdx-miniaudio](https://github.com/rednblackgames/gdx-miniaudio) library.
 
 On Android, Opus audio requires Android 5 Lollipop (API 21).
 
