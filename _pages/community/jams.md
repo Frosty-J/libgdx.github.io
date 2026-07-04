@@ -19,17 +19,6 @@ toc_sticky: false
 # Upcoming
 If you want to stay up to date – join the official [libGDX Discord](/community/discord/)!
 
-## June 2026
-***The Pixel Playground Jam***  
-Dust off your cartridges and warm up your CRTs! This is the jam where you create a low-res masterpiece. All entries must fully embrace the visual and audio limitations of the 8-Bit era. Get ready to pixelate!
-
-No suggestions.  
-Theme voting will be done via Discord.  
-Have fun!
-
-Voting: 11th – 13th  
-Jam: 14th – 20th
-
 ## September 2026
 Suggestions: 6th – 8th  
 Voting: 10th – 12th  
@@ -53,6 +42,7 @@ We encourage camaraderie, teamwork, and good sportsmanship with a side of well-i
 <br/>
 
 # Past Jams
+* [One Life Only](https://itch.io/jam/libgdx-jam-37) (June 2026)
 * [That's a Weapon?](https://itch.io/jam/libgdx-jam-36) (March 2026)
 * [BRIDGES](https://itch.io/jam/libgdx-jam-35) (December 2025)
 * [Dungeons](https://itch.io/jam/libgdx-jam-34) (September 2025)
