@@ -143,7 +143,7 @@ for(FileHandle file: files) {
 
 **WARNING**: If you don't specify a folder the list will be empty.
 
-**Note**: Listing of internal directories is not supported on Desktop. To work around this problem, you can [generate a list of files before deployment](https://lyze.dev/2021/04/29/libGDX-Internal-Assets-List/).
+**Note**: Listing of internal directories is not supported on Desktop. To work around this problem, you can [generate a list of files before deployment](https://web.archive.org/web/20240901085440/https://lyze.dev/2021/04/29/libGDX-Internal-Assets-List/). New projects generated with [gdx-liftoff](https://libgdx.com/wiki/start/project-generation) have this functionality built-in, automatically producing a file listing at `assets/assets.txt`.
 
 We can also ask for the parent directory of a file or create a FileHandle for a file in a directory (aka "child").
 
