@@ -76,7 +76,7 @@ configure(subprojects - project(':android')) {
   compileJava {
     options.incremental = true
   }
-  // From https://lyze.dev/2021/04/29/libGDX-Internal-Assets-List/
+  // From https://web.archive.org/web/20240901085440/https://lyze.dev/2021/04/29/libGDX-Internal-Assets-List/
   // The article can be helpful when using assets.txt in your project.
   compileJava.doLast {
     // projectFolder/assets
