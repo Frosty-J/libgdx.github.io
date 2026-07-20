@@ -90,13 +90,6 @@ Breathtakingly fast and tough-as-nails, Rifter is an acrobatic platformer drench
 # Mobile Games
 libGDX really shines if you plan to release games for mobile platforms as well!
 
-## [Disney Heroes: Battle Mode](https://perblue.com/our-games/) by PerBlue Entertainment
-<img align="left" src="https://lh3.googleusercontent.com/9iWANe2crKqFiDCY8EVGMhrLzq9O47lQIu0t-1k-snQ1Tj3P-OJx2qQHgiW_rNpv11-t=w460-h215-r" style="margin-right: 25px; margin-top: 17px; margin-bottom: 10px" class="lazyload">
-
-Battle your way through a dangerous digital world and save it from an evil virus with the help of your favorite Disney and Pixar heroes! It’s no-holds barred in this battle-packed RPG starring heroes from Frozen, Wall-E, Toy Story, The Lion King, Pirates of the Caribbean, and more.  [[Android](https://play.google.com/store/apps/details?id=com.perblue.disneyheroes) / [iOS](https://itunes.apple.com/us/app/disney-heroes-battle-mode/id1327925104?mt=8)]
-
-<div style="clear: both; width: 100%; height: 1px;"></div>
-
 ## [Sandship](https://rockbitegames.com/games/sandship) by Rockbite Games
 <img align="right" src="https://play-lh.googleusercontent.com/zVcowfZOhVnUaYCRDu5YkLTczk7eHG2JeVoHZ36aY249O1I0Mm2e_f_IqzPsDNzUug=w460-h215-r" style="margin-left: 25px; margin-top: 17px; margin-bottom: 10px" class="lazyload">
 
@@ -118,10 +111,10 @@ DIG DEEP and uncover the hidden story behind Deep Town and along the way discove
 
 <div style="clear: both; width: 100%; height: 1px;"></div>
 
-## [Let's Farm](https://www.facebook.com/letsfarmofficial) by Playday Games
-<img align="left" src="https://play-lh.googleusercontent.com/DPuKJ0C_FNTALF-m_0SL7eAdpbTOr-ETipzg2a8YFXY_kFjXv2ukgzkjF93U2eOfSdc=w460-h215-r" style="margin-right: 25px; margin-top: 17px; margin-bottom: 10px" class="lazyload">
+## [Slice & Dice](https://tann.fun/games/dice/) by tann
+<img align="left" src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1775490/header.jpg" style="margin-right: 25px; margin-top: 17px; margin-bottom: 10px" class="lazyload">
 
-Let's Farm is one of the most popular farming games on mobile! Grow your own crops, cook delicious food, feed lovely pets and trade with farmers from all over the world! [[Android](https://www.amazon.com/Playday-Games-Limited-Lets-Farm/dp/B00FFAEBAU) / [iOS](https://apps.apple.com/us/app/lets-farm/id911657164)]
+Tactical dice-rolling roguelike combat. Take control of 5 heroes, each with their own unique dice. Fight your way through 20 levels of monsters and try to take on the final boss. If you lose a single fight you have to start over so be careful (and lucky!). [[Android](https://play.google.com/store/apps/details?id=com.com.tann.dice) / [iOS](https://apps.apple.com/us/app/slice-dice/id6449848963) / [Desktop](https://store.steampowered.com/app/1775490/Slice__Dice/)]
 
 <div style="clear: both; width: 100%; height: 1px;"></div>
 
@@ -170,7 +163,14 @@ Kelvin and the Infamous Machine is a hilarious point-and-click adventure in whic
 ## [Kakele Online](https://kakele.io/) by ViVa Games
 <img align="right" src="https://lh5.googleusercontent.com/Q2gvO_Yag6fNIrej_m4OWcBbE6sJqicK2C6hKG_igsG7oVW7vNw-i_-SgHcNMVic_Qk=w2400" style="margin-left: 25px; margin-top: 17px; margin-bottom: 10px; max-height: 215px" class="lazyload">
 
-Kakele Online is a cross platform, 2D open world MMORPG. In Kakele, you join players from all over the world to fight monsters, explore mysterious caves, complete tasks and quests, collect items and much more! [[Android](https://play.google.com/store/apps/details?id=mmorpg.main) / [iOS](https://apps.apple.com/us/app/id1526962408) / [Steam](https://store.steampowered.com/app/1541020/Kakele_Online__MMORPG/)]
+Kakele Online is a cross platform, 2D open world MMORPG. In Kakele, you join players from all over the world to fight monsters, explore mysterious caves, complete tasks and quests, collect items and much more! [[Android](https://play.google.com/store/apps/details?id=mmorpg.main) / [iOS](https://apps.apple.com/us/app/id1526962408) / [Desktop](https://store.steampowered.com/app/1541020/Kakele_Online__MMORPG/)]
+
+<div style="clear: both; width: 100%; height: 1px;"></div>
+
+## [Disney Heroes: Battle Mode](https://perblue.com/our-games/) by PerBlue Entertainment
+<img align="left" src="https://lh3.googleusercontent.com/9iWANe2crKqFiDCY8EVGMhrLzq9O47lQIu0t-1k-snQ1Tj3P-OJx2qQHgiW_rNpv11-t=w460-h215-r" style="margin-right: 25px; margin-top: 17px; margin-bottom: 10px" class="lazyload">
+
+Battle your way through a dangerous digital world and save it from an evil virus with the help of your favorite Disney and Pixar heroes! It’s no-holds barred in this battle-packed RPG starring heroes from Frozen, Wall-E, Toy Story, The Lion King, Pirates of the Caribbean, and more. [formerly on Android / iOS]
 
 <div style="clear: both; width: 100%; height: 1px;"></div>
 
