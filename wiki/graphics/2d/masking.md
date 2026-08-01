@@ -7,7 +7,7 @@ Masking is the technique of hiding portions of an image using the pixel informat
 {: .notice--warning}
 
 ## Table of Contents
-1. [Masking using glScissor](/wiki/graphics/2d/masking#1-masking-using-glScissor-rectangle)
+1. [Masking using glScissor](/wiki/graphics/2d/masking#1-masking-using-glscissor-rectangle)
 2. [Masking using the ScissorStack](/wiki/graphics/2d/masking#2-masking-using-the-scissorstack-rectangles)
 3. [Masking using the Depth Buffer](/wiki/graphics/2d/masking#3-masking-using-the-depth-buffer-shapes)
 4. [Masking using Blending Function](/wiki/graphics/2d/masking#4-masking-using-blending-function-shapes-or-textures)
