@@ -73,3 +73,4 @@ These are some open-source projects found on the web that use libGDX and can be 
 * [bombergame](https://github.com/mcol/bombergame)
 * [martianrun](https://github.com/wmora/martianrun) (2D running game; uses AdMob and Google Play Game Services)
 * [rpgboss-editor](https://github.com/rpgboss/rpgboss)
+* [fog11](https://github.com/Burpingbubbleboy/fog11)
