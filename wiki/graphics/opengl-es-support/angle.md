@@ -51,4 +51,4 @@ OpenGL renderer: ANGLE (AMD, AMD Radeon(TM) 860M Graphics (0x00001114) Direct3D1
 OpenGL vendor: Google Inc. (AMD)
 ```
 
-[^1]: https://en.wikipedia.org/wiki/ANGLE_(software)
+[^1]: <https://en.wikipedia.org/wiki/ANGLE_(software)>
